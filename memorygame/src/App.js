@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import CocktailCard from ".components/CocktailCard";
+// import Header from "./components/Header";
+// import CocktailCard from "./components/CocktailCard";
 import cocktails from "./cocktails.json";
 
 class App extends Component {
@@ -9,6 +9,12 @@ class App extends Component {
   state = {
     cocktails: cocktails
   };
+
+  render() {
+    return (
+      <Navbar />
+    );
+  }
 }
 
 export default App;
