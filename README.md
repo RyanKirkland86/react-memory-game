@@ -2,8 +2,9 @@
 
 ## Project:
 
+This is a memory game created using React. When the user arrives on the page they are presented with a random grid of different cocktails to pick from. When they click on a new cocktail, the score increases and the grid randomly reshuffles. If the user clicks the same cocktail twice, they are told they guessed incorrectly and the game reloads but the high score persists.
 
-[Deployed Link]()
+[Deployed Link](https://ryankirkland86.github.io/react-memory-game/)
 
 ![Image]()
 
