@@ -11,7 +11,8 @@ class App extends Component {
     cocktails: cocktails,
     score: 0,
     highScore: 0,
-    clicked: []
+    clicked: [],
+    message: "Click on a cocktail to begin",
   };
 
   //Method for shuffling drinks
@@ -36,18 +37,21 @@ class App extends Component {
     let clicked = this.state.clicked;
     let score = this.state.score;
     let highScore = this.state.highScore;
+    let message = this.state.message;
 
     if (clicked.includes(id)) {
       clicked = [];
       score = 0;
+      message = "You guessed incorrectly!"
     } else {
       clicked.push(id);
       score += 1;
+      message = "You guessed correctly!"
     }
     if (highScore < score) {
       highScore = score;
     }
-    this.setState({ clicked: clicked, score: score, highScore: highScore });
+    this.setState({ clicked: clicked, score: score, highScore: highScore, message: message });
   };
 
   handleClick = event => {
@@ -63,6 +67,7 @@ class App extends Component {
         <Navbar 
           score = { this.state.score }
           highScore = { this.state.highScore }
+          message = { this.state.message }
         />
         <Header />
         <div className="container row">

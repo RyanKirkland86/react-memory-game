@@ -8,7 +8,7 @@ function Navbar(props) {
                 <h3 className="text-center">Cocktail Memory Game!</h3>
             </div>
             <div className="col-4">
-                <h4 className="text-center">Click on a cocktail to begin</h4>
+                <h4 className="text-center"> {props.message} </h4>
             </div>
             <div className="col-4">
                 <h4 className="text-center">Score: {props.score} | High Score: {props.highScore}</h4>
