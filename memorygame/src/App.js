@@ -9,9 +9,9 @@ class App extends Component {
   // Setting this.state.cocktails to the cocktails json array
   state = {
     cocktails: cocktails,
-    // score: score,
-    // highScore: highScore,
-    // clicked: []
+    score: 0,
+    highScore: 0,
+    clicked: []
   };
 
   //Method for shuffling drinks
@@ -31,12 +31,31 @@ class App extends Component {
     this.shuffleDrinks();
   };
 
+  //Select drink function
+  selectDrink = (id) => {
+    let clicked = this.state.clicked;
+    let score = this.state.score;
+    let highScore = this.state.highScore;
+
+    if (clicked.includes(id)) {
+      clicked = [];
+      score = 0;
+    } else {
+      clicked.push(id);
+      score += 1;
+    }
+    if (highScore < score) {
+      highScore = score;
+    }
+    this.setState({ clicked: clicked, score: score, highScore: highScore });
+  };
+
   render() {
     return (
       <Wrapper>
         <Navbar 
           score = { this.state.score }
-          highscore = { this.state.highScore }
+          highScore = { this.state.highScore }
         />
         <Header />
         <div className="container row">
@@ -46,6 +65,8 @@ class App extends Component {
               key={cocktail.id}
               name={cocktail.name}
               image={cocktail.image}
+              shuffleDrinks={this.shuffleDrinks}
+              handleClick={this.handleClick}
             />
           ))}
         </div>
