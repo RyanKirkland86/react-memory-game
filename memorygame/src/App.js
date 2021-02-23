@@ -14,6 +14,18 @@ class App extends Component {
     // clicked: []
   };
 
+  //Method for shuffling drinks
+  shuffleDrinks = () => {
+    let cocktails = this.state.cocktails;
+    for (let i = cocktails.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      let temp = cocktails[i];
+      cocktails[i] = cocktails[j];
+      cocktails[j] = temp
+    }
+    this.setState({ cocktails: cocktails })
+  };
+
   render() {
     return (
       <Wrapper>
