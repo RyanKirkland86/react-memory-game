@@ -26,6 +26,11 @@ class App extends Component {
     this.setState({ cocktails: cocktails })
   };
 
+  //Shuffles drinks when page first loads
+  componentDidMount() {
+    this.shuffleDrinks();
+  };
+
   render() {
     return (
       <Wrapper>
