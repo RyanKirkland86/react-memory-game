@@ -50,6 +50,13 @@ class App extends Component {
     this.setState({ clicked: clicked, score: score, highScore: highScore });
   };
 
+  handleClick = event => {
+    event.preventDefault();
+    let id = event.target.getAttribute("data-id");
+    this.selectDrink(id);
+    this.shuffleDrinks();
+  };
+
   render() {
     return (
       <Wrapper>
