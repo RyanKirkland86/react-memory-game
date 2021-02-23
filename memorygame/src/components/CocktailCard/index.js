@@ -3,8 +3,8 @@ import "./style.css";
 
 function CocktailCard(props) {
     return (
-        <div className="img-container col-3 d-flex" id={props.id}>
-            <img src={props.image} alt={props.name} />
+        <div className="col-3 d-flex" key={props.id}>
+            <img className="img-fluid mx-auto" src={props.image} alt={props.name} />
         </div>
     )
 }

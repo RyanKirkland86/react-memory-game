@@ -2,73 +2,73 @@
     {
         "id": 1,
         "name": "Bloody Mary",
-        "image": "/memorygame/public/images/bloody-mary.jpg",
+        "image": "/images/bloody-mary.jpg",
         "selected": false
     },
     {
         "id": 2,
         "name": "Boulevardier",
-        "image": "/memorygame/public/images/boulevardier.jpg",
+        "image": "/images/boulevardier.jpg",
         "selected": false
     },
     {
         "id": 3,
         "name": "Dark and Stormy",
-        "image": "/memorygame/public/images/dark-and-stormy.jpg",
+        "image": "/images/dark-and-stormy.jpg",
         "selected": false
     },
     {
         "id": 4,
         "name": "Margarita",
-        "image": "/memorygame/public/images/margarita.jpg",
+        "image": "/images/margarita.jpg",
         "selected": false
     },
     {
         "id": 5,
         "name": "Moscow Mule",
-        "image": "/memorygame/public/images/moscow-mule.jpg",
+        "image": "/images/moscow-mule.jpg",
         "selected": false
     },
     {
         "id": 6,
         "name": "Negroni",
-        "image": "/memorygame/public/images/negroni.jpg",
+        "image": "/images/negroni.jpg",
         "selected": false
     },
     {
         "id": 7,
         "name": "Old Fashioned",
-        "image": "/memorygame/public/images/old-fashioned.jpg",
+        "image": "/images/old-fashioned.jpg",
         "selected": false
     },
     {
         "id": 8,
         "name": "Pimm's Cup",
-        "image": "/memorygame/public/images/pimms-cup.jpg",
+        "image": "/images/pimms-cup.jpg",
         "selected": false
     },
     {
         "id": 9,
         "name": "Pisco Sour",
-        "image": "/memorygame/public/images/pisco-sour.jpg",
+        "image": "/images/pisco-sour.jpg",
         "selected": false
     },
     {
         "id": 10,
         "name": "Sazerac",
-        "image": "/memorygame/public/images/sazerac.jpg",
+        "image": "/images/sazerac.jpg",
         "selected": false
     },
     {
         "id": 11,
         "name": "Sidecar",
-        "image": "/memorygame/public/images/sidecar.jpg",
+        "image": "/images/sidecar.jpg",
         "selected": false
     },
     {
         "id": 12,
         "name": "Whiskey Smash",
-        "image": "/memorygame/public/images/whiskey-smash.jpg",
+        "image": "/images/whiskey-smash.jpg",
         "selected": false
     }
 ]
